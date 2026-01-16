@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clasificador de Residuos - Sobre Nosotros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="vanta-background"></div>
+
+  <header class="navbar">
+    <div class="nav-brand">EcoVision</div>
+    <nav class="nav-links">
+      <a href="./index.html">Detectar</a>
+      <a href="./guia.html">Guía</a>
+      <a href="./sobre-nosotros.html" class="active">Sobre la IA</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card glass text-center">
+      <div class="hero-ia">
+        <div>
+          <div class="badge-pill"><span class="dot"></span> IA en tu navegador</div>
+          <h1 style="margin:14px 0 8px;">Cómo funciona</h1>
+          <p style="margin:0 0 12px;">Teachable Machine + TensorFlow.js ejecutándose 100% en el cliente: sin subidas, sin esperas.</p>
+          <div class="stat-row">
+            <div class="stat-chip">Privado: cámara local</div>
+            <div class="stat-chip">Rápido: WebGL</div>
+            <div class="stat-chip">Modular: JSON</div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <figure style="background-image:url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80');"></figure>
+          <p style="margin:0;color:rgba(29,29,31,0.7);">Tu modelo personalizado se carga desde una URL y se ejecuta sobre los fotogramas de la cámara en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric">
+          <h3>98% local</h3>
+          <p style="margin:0;">Procesamiento en tu dispositivo sin depender de red.</p>
+        </div>
+        <div class="metric">
+          <h3><span style="color:#00d084;">~40 ms</span></h3>
+          <p style="margin:0;">Respuesta promedio por fotograma usando WebGL.</p>
+        </div>
+        <div class="metric">
+          <h3>+12 clases</h3>
+          <p style="margin:0;">Modelo entrenado con residuos comunes y variantes.</p>
+        </div>
+        <div class="metric">
+          <h3>0 subidas</h3>
+          <p style="margin:0;">Ni una imagen abandona tu navegador.</p>
+        </div>
+      </div>
+
+      <div class="feature-grid" style="margin-top:18px;">
+        <div class="step-card glass-light">
+          <h2>1. Entrenamiento</h2>
+          <p>Capturamos imágenes etiquetadas (plástico, vidrio, papel...) y entrenamos un modelo en Teachable Machine.</p>
+        </div>
+        <div class="step-card glass-light">
+          <h2>2. Exportación Web</h2>
+          <p>Publicamos el modelo y copiamos la URL (model.json + metadata.json) para consumirla desde JavaScript.</p>
+        </div>
+        <div class="step-card glass-light">
+          <h2>3. Cámara en vivo</h2>
+          <p>TensorFlow.js toma los fotogramas de tu cámara, los pasa al modelo y obtiene probabilidades por clase.</p>
+        </div>
+        <div class="step-card glass-light">
+          <h2>4. Recomendación</h2>
+          <p>Mapeamos la clase detectada a su contenedor (amarillo, azul, verde...) y explicamos el porqué.</p>
+        </div>
+        <div class="step-card glass-light">
+          <h2>5. Mejora continua</h2>
+          <p>Si dudamos, guardamos ejemplos y reentrenamos el modelo para aumentar precisión con nuevos casos.</p>
+        </div>
+        <div class="step-card glass-light">
+          <h2>6. Sin datos fuera</h2>
+          <p>Todo ocurre en tu navegador: la cámara nunca sube a servidores, solo el modelo se descarga.</p>
+        </div>
+      </div>
+
+      <div class="info-card glass-light" style="margin-top:18px;">
+        <h2>Privacidad y velocidad</h2>
+        <p>Todo ocurre en tu navegador: la cámara nunca sube a servidores, y el modelo corre en WebGL para respuestas rápidas.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="glass-light step-card">
+          <div class="pill">Nuestro camino</div>
+          <h2 style="margin:10px 0 6px;">Hoja de ruta</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong>Idea:</strong> prototipo rápido con Teachable Machine y clasificación base.
+            </div>
+            <div class="timeline-item">
+              <strong>Optimización:</strong> ajuste de input, balance de datos y revisión de falsos positivos.
+            </div>
+            <div class="timeline-item">
+              <strong>Iteración:</strong> reentrenamos con ejemplos reales enviados por usuarios.
+            </div>
+            <div class="timeline-item">
+              <strong>Hoy:</strong> modelo modular que puedes sustituir por tu propio JSON.
+            </div>
+          </div>
+        </div>
+        <div class="glass-light step-card">
+          <div class="pill">Equipo y valores</div>
+          <h2 style="margin:10px 0 6px;">¿Quiénes somos?</h2>
+          <p style="margin:0 0 6px;">Un grupo de desarrolladores y educadores ambientales que busca facilitar el reciclaje con tecnología abierta.</p>
+          <ul style="text-align:left; margin:10px auto; max-width:320px;">
+            <li>Claridad: resultados explicados con lenguaje simple.</li>
+            <li>Accesibilidad: corre en hardware modesto.</li>
+            <li>Transparencia: puedes ver y cambiar el modelo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="glass-light step-card">
+          <div class="pill">Consejos de uso</div>
+          <ul style="text-align:left; margin:10px auto; max-width:360px;">
+            <li>Buena luz frontal y objeto a ~30cm para mayor precisión.</li>
+            <li>Muestra solo un residuo por cuadro para evitar confusiones.</li>
+            <li>Si dudas, guarda la foto y súmala al próximo entrenamiento.</li>
+          </ul>
+        </div>
+        <div class="glass-light step-card">
+          <div class="pill">Compatibilidad</div>
+          <p style="margin:10px 0;">Funciona en navegadores modernos con WebGL. Si se desactiva, cae a CPU con rendimiento aceptable.</p>
+          <p style="margin:0;">Para dispositivos antiguos, reduce la resolución de la cámara desde los ajustes.</p>
+        </div>
+      </div>
+
+      <div class="cta-block" style="margin-top:16px;">
+        <h2 style="margin:0 0 6px;">¿Listo para probar?</h2>
+        <p style="margin:0 0 10px;">Entra en “Detectar”, acepta la cámara y empieza a reciclar con confianza.</p>
+        <a href="./index.html" style="display:inline-block;padding:10px 16px;border-radius:10px;background:rgba(255,255,255,0.18);color:#fff;text-decoration:none;font-weight:600;">Ir a detectar</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

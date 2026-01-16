@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clasificador de Residuos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.9.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+</head>
+<body>
+  <div id="vanta-background"></div>
+
+  <header class="navbar">
+    <div class="nav-brand">EcoVision</div>
+    <nav class="nav-links">
+      <a href="./index.html" class="active">Detectar</a>
+      <a href="./guia.html">Guía</a>
+      <a href="./sobre-nosotros.html">Sobre la IA</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card glass">
+      <div class="card-header">
+        <h1>Clasifica tus residuos</h1>
+        <p>Usa la cámara para identificar el tipo de residuo y su contenedor.</p>
+      </div>
+      <div class="camera-wrapper">
+        <div id="webcam-container" class="webcam-box glass-light">
+          <div class="placeholder">Cámara apagada</div>
+        </div>
+        <button id="start-btn" class="primary-btn">Iniciar Cámara</button>
+      </div>
+      <div id="label-container" class="results-grid"></div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script src="./script.js"></script>
+  
+</body>
+</html>
