@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guía de Reciclaje</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Guía de Reciclaje - EcoVision</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -21,8 +18,38 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="card glass">
+  <main class="container guide-page">
+    <!-- Hero Section -->
+    <section class="guide-hero fade-in">
+      <div class="badge-pill-centered">
+        <span class="dot pulse"></span>
+        <span>Guía de reciclaje</span>
+      </div>
+    </section>
+
+    <section class="stats-grid fade-in-delayed">
+      <div class="stat-card glass">
+        <div class="stat-icon">🌍</div>
+        <h3 class="stat-number">75%</h3>
+        <p class="stat-label">Reciclable</p>
+        <p class="stat-desc">Gran parte de los residuos puede recuperarse</p>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">💧</div>
+        <h3 class="stat-number">90%</h3>
+        <p class="stat-label">Ahorro de agua</p>
+        <p class="stat-desc">El reciclaje reduce el consumo hídrico</p>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">⚡</div>
+        <h3 class="stat-number">60%</h3>
+        <p class="stat-label">Menos energía</p>
+        <p class="stat-desc">Procesos más eficientes y limpios</p>
+      </div>
+    </section>
+
+    <!-- Contenedores Section -->
+    <section class="card glass fade-in-delayed-2">
       <div class="card-header">
         <h1>Tipos de contenedores</h1>
         <p>Identifica el color correcto para cada residuo.</p>
@@ -95,6 +122,16 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA -->
+    <section class="cta-section fade-in-delayed-3">
+      <div class="cta-card glass">
+        <h2>¿Listo para empezar?</h2>
+        <p>Activa tu cámara y descubre cómo reciclar correctamente en tiempo real</p>
+        <a href="./index.html" class="cta-button">Ir a detectar</a>
+      </div>
+    </section>
+
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>

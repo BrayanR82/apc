@@ -3,10 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clasificador de Residuos - Sobre Nosotros</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Clasificador de Residuos - Sobre la IA</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -21,127 +18,176 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="card glass text-center">
-      <div class="hero-ia">
-        <div>
-          <div class="badge-pill"><span class="dot"></span> IA en tu navegador</div>
-          <h1 style="margin:14px 0 8px;">Cómo funciona</h1>
-          <p style="margin:0 0 12px;">Teachable Machine + TensorFlow.js ejecutándose 100% en el cliente: sin subidas, sin esperas.</p>
-          <div class="stat-row">
-            <div class="stat-chip">Privado: cámara local</div>
-            <div class="stat-chip">Rápido: WebGL</div>
-            <div class="stat-chip">Modular: JSON</div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <figure style="background-image:url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80');"></figure>
-          <p style="margin:0;color:rgba(29,29,31,0.7);">Tu modelo personalizado se carga desde una URL y se ejecuta sobre los fotogramas de la cámara en tiempo real.</p>
-        </div>
+  <main class="container about-page">
+    <!-- Hero Section -->
+    <section class="about-hero fade-in">
+      <div class="badge-pill-centered">
+        <span class="dot pulse"></span>
+        <span>IA en tu navegador</span>
       </div>
+      <h1 class="about-title">Inteligencia Artificial<br>en acción</h1>
+      <p class="about-subtitle">Teachable Machine + TensorFlow.js ejecutándose 100% en el cliente.<br>Sin subidas, sin esperas, sin comprometer tu privacidad.</p>
+    </section>
 
-      <div class="metrics-grid">
-        <div class="metric">
-          <h3>98% local</h3>
-          <p style="margin:0;">Procesamiento en tu dispositivo sin depender de red.</p>
-        </div>
-        <div class="metric">
-          <h3><span style="color:#00d084;">~40 ms</span></h3>
-          <p style="margin:0;">Respuesta promedio por fotograma usando WebGL.</p>
-        </div>
-        <div class="metric">
-          <h3>+12 clases</h3>
-          <p style="margin:0;">Modelo entrenado con residuos comunes y variantes.</p>
-        </div>
-        <div class="metric">
-          <h3>0 subidas</h3>
-          <p style="margin:0;">Ni una imagen abandona tu navegador.</p>
-        </div>
+    <!-- Stats Grid -->
+    <section class="stats-grid fade-in-delayed">
+      <div class="stat-card glass">
+        <div class="stat-icon">🔒</div>
+        <h3 class="stat-number">98%</h3>
+        <p class="stat-label">Procesamiento local</p>
+        <p class="stat-desc">En tu dispositivo sin depender de red</p>
       </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">⚡</div>
+        <h3 class="stat-number">~40ms</h3>
+        <p class="stat-label">Respuesta ultrarrápida</p>
+        <p class="stat-desc">Por fotograma usando WebGL</p>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">🎯</div>
+        <h3 class="stat-number">+12</h3>
+        <p class="stat-label">Clases entrenadas</p>
+        <p class="stat-desc">Residuos comunes y variantes</p>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">🚫</div>
+        <h3 class="stat-number">0</h3>
+        <p class="stat-label">Imágenes subidas</p>
+        <p class="stat-desc">Ninguna abandona tu navegador</p>
+      </div>
+    </section>
 
-      <div class="feature-grid" style="margin-top:18px;">
-        <div class="step-card glass-light">
-          <h2>1. Entrenamiento</h2>
+    <!-- How it Works -->
+    <section class="how-it-works fade-in-delayed-2">
+      <h2 class="section-title">Cómo funciona</h2>
+      <div class="process-grid">
+        <div class="process-card glass">
+          <div class="process-number">1</div>
+          <h3>Entrenamiento</h3>
           <p>Capturamos imágenes etiquetadas (plástico, vidrio, papel...) y entrenamos un modelo en Teachable Machine.</p>
         </div>
-        <div class="step-card glass-light">
-          <h2>2. Exportación Web</h2>
+        <div class="process-card glass">
+          <div class="process-number">2</div>
+          <h3>Exportación Web</h3>
           <p>Publicamos el modelo y copiamos la URL (model.json + metadata.json) para consumirla desde JavaScript.</p>
         </div>
-        <div class="step-card glass-light">
-          <h2>3. Cámara en vivo</h2>
+        <div class="process-card glass">
+          <div class="process-number">3</div>
+          <h3>Cámara en vivo</h3>
           <p>TensorFlow.js toma los fotogramas de tu cámara, los pasa al modelo y obtiene probabilidades por clase.</p>
         </div>
-        <div class="step-card glass-light">
-          <h2>4. Recomendación</h2>
+        <div class="process-card glass">
+          <div class="process-number">4</div>
+          <h3>Recomendación</h3>
           <p>Mapeamos la clase detectada a su contenedor (amarillo, azul, verde...) y explicamos el porqué.</p>
         </div>
-        <div class="step-card glass-light">
-          <h2>5. Mejora continua</h2>
+        <div class="process-card glass">
+          <div class="process-number">5</div>
+          <h3>Mejora continua</h3>
           <p>Si dudamos, guardamos ejemplos y reentrenamos el modelo para aumentar precisión con nuevos casos.</p>
         </div>
-        <div class="step-card glass-light">
-          <h2>6. Sin datos fuera</h2>
+        <div class="process-card glass">
+          <div class="process-number">6</div>
+          <h3>Sin datos fuera</h3>
           <p>Todo ocurre en tu navegador: la cámara nunca sube a servidores, solo el modelo se descarga.</p>
         </div>
       </div>
+    </section>
 
-      <div class="info-card glass-light" style="margin-top:18px;">
-        <h2>Privacidad y velocidad</h2>
-        <p>Todo ocurre en tu navegador: la cámara nunca sube a servidores, y el modelo corre en WebGL para respuestas rápidas.</p>
+    <!-- Features -->
+    <section class="features-section fade-in-delayed-3">
+      <div class="feature-highlight glass">
+        <div class="feature-content">
+          <span class="feature-badge">Privacidad garantizada</span>
+          <h2>Tu privacidad es primero</h2>
+          <p>Todo ocurre en tu navegador. La cámara nunca sube a servidores, y el modelo corre en WebGL para respuestas instantáneas. Tus datos son solo tuyos.</p>
+          <ul class="feature-list">
+            <li>✓ Sin servidores externos</li>
+            <li>✓ Procesamiento en tiempo real</li>
+            <li>✓ Tecnología WebGL acelerada</li>
+            <li>✓ Código abierto y transparente</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="visual-box"></div>
+        </div>
       </div>
+    </section>
 
-      <div class="grid-2">
-        <div class="glass-light step-card">
-          <div class="pill">Nuestro camino</div>
-          <h2 style="margin:10px 0 6px;">Hoja de ruta</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <strong>Idea:</strong> prototipo rápido con Teachable Machine y clasificación base.
+    <!-- Team & Values -->
+    <section class="team-section fade-in-delayed-4">
+      <div class="team-grid">
+        <div class="team-card glass">
+          <div class="team-icon">🎯</div>
+          <h3>Nuestra misión</h3>
+          <p>Facilitar el reciclaje con tecnología abierta y accesible para todos. Creemos que la IA puede ayudar a crear un mundo más sostenible.</p>
+        </div>
+        <div class="team-card glass">
+          <div class="team-icon">💡</div>
+          <h3>Nuestros valores</h3>
+          <ul class="values-list">
+            <li>Claridad en los resultados</li>
+            <li>Accesibilidad universal</li>
+            <li>Transparencia total</li>
+            <li>Privacidad por diseño</li>
+          </ul>
+        </div>
+        <div class="team-card glass">
+          <div class="team-icon">🚀</div>
+          <h3>Hoja de ruta</h3>
+          <div class="roadmap">
+            <div class="roadmap-item">
+              <span class="roadmap-dot done"></span>
+              <div>
+                <strong>Prototipo base</strong>
+                <p>Con Teachable Machine</p>
+              </div>
             </div>
-            <div class="timeline-item">
-              <strong>Optimización:</strong> ajuste de input, balance de datos y revisión de falsos positivos.
+            <div class="roadmap-item">
+              <span class="roadmap-dot done"></span>
+              <div>
+                <strong>Optimización</strong>
+                <p>Balance y precisión</p>
+              </div>
             </div>
-            <div class="timeline-item">
-              <strong>Iteración:</strong> reentrenamos con ejemplos reales enviados por usuarios.
-            </div>
-            <div class="timeline-item">
-              <strong>Hoy:</strong> modelo modular que puedes sustituir por tu propio JSON.
+            <div class="roadmap-item">
+              <span class="roadmap-dot active"></span>
+              <div>
+                <strong>Modelo modular</strong>
+                <p>Sustituible por JSON</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="glass-light step-card">
-          <div class="pill">Equipo y valores</div>
-          <h2 style="margin:10px 0 6px;">¿Quiénes somos?</h2>
-          <p style="margin:0 0 6px;">Un grupo de desarrolladores y educadores ambientales que busca facilitar el reciclaje con tecnología abierta.</p>
-          <ul style="text-align:left; margin:10px auto; max-width:320px;">
-            <li>Claridad: resultados explicados con lenguaje simple.</li>
-            <li>Accesibilidad: corre en hardware modesto.</li>
-            <li>Transparencia: puedes ver y cambiar el modelo.</li>
+      </div>
+    </section>
+
+    <!-- Tips -->
+    <section class="tips-section fade-in-delayed-5">
+      <div class="tips-container">
+        <div class="tip-card glass">
+          <h3>💡 Consejos de uso</h3>
+          <ul>
+            <li>Usa buena iluminación frontal</li>
+            <li>Coloca el objeto a ~30cm</li>
+            <li>Muestra un solo residuo</li>
+            <li>Evita fondos complejos</li>
           </ul>
         </div>
-      </div>
-
-      <div class="grid-2">
-        <div class="glass-light step-card">
-          <div class="pill">Consejos de uso</div>
-          <ul style="text-align:left; margin:10px auto; max-width:360px;">
-            <li>Buena luz frontal y objeto a ~30cm para mayor precisión.</li>
-            <li>Muestra solo un residuo por cuadro para evitar confusiones.</li>
-            <li>Si dudas, guarda la foto y súmala al próximo entrenamiento.</li>
-          </ul>
-        </div>
-        <div class="glass-light step-card">
-          <div class="pill">Compatibilidad</div>
-          <p style="margin:10px 0;">Funciona en navegadores modernos con WebGL. Si se desactiva, cae a CPU con rendimiento aceptable.</p>
-          <p style="margin:0;">Para dispositivos antiguos, reduce la resolución de la cámara desde los ajustes.</p>
+        <div class="tip-card glass">
+          <h3>⚙️ Compatibilidad</h3>
+          <p>Funciona en navegadores modernos con WebGL. Si se desactiva, cae a CPU con rendimiento aceptable.</p>
+          <p>Para dispositivos antiguos, reduce la resolución de cámara.</p>
         </div>
       </div>
+    </section>
 
-      <div class="cta-block" style="margin-top:16px;">
-        <h2 style="margin:0 0 6px;">¿Listo para probar?</h2>
-        <p style="margin:0 0 10px;">Entra en “Detectar”, acepta la cámara y empieza a reciclar con confianza.</p>
-        <a href="./index.html" style="display:inline-block;padding:10px 16px;border-radius:10px;background:rgba(255,255,255,0.18);color:#fff;text-decoration:none;font-weight:600;">Ir a detectar</a>
+    <!-- CTA -->
+    <section class="cta-section fade-in-delayed-6">
+      <div class="cta-card glass">
+        <h2>¿Listo para empezar?</h2>
+        <p>Activa tu cámara y descubre cómo reciclar correctamente en tiempo real</p>
+        <a href="./index.html" class="cta-button">Ir a detectar</a>
       </div>
     </section>
   </main>

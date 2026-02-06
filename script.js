@@ -216,6 +216,29 @@ function initVanta() {
   }
 }
 
+// Header scroll behavior
+let lastScrollTop = 0;
+let scrollTimeout;
+const navbar = document.querySelector('.navbar');
+
+function handleScroll() {
+  clearTimeout(scrollTimeout);
+  
+  scrollTimeout = setTimeout(() => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      // Scrolling down
+      navbar.classList.add('navbar-hidden');
+    } else {
+      // Scrolling up
+      navbar.classList.remove('navbar-hidden');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  }, 10);
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   initVanta();
@@ -227,6 +250,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelectorAll('.bin-btn').length > 0) {
     initGuiaSync();
   }
+  
+  // Add scroll listener for header
+  window.addEventListener('scroll', handleScroll, { passive: true });
 });
 
 // Try to init Vanta on window load as fallback
